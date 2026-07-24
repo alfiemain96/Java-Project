@@ -24,8 +24,8 @@ class WeatherIdentifier {
 
 public class IfElse {
     public static void main(String[] args) {
-        int userAccess = 3;
-        if (userAccess != 3) {
+        boolean adminAccess = true;
+        if (adminAccess == true) {
             System.out.println("Access Denied");
         } else
         {
