@@ -27,8 +27,7 @@ public class IfElse {
         boolean adminAccess = true;
         if (!adminAccess) {
             System.out.println("Access Denied");
-        } else
-        {
+        } else {
             WeatherIdentifier weatherIdentity = new WeatherIdentifier(WeatherIdentifier.WeatherType.SUNNY_DAY);
             System.out.printf(weatherIdentity.checkWeather());
         }
