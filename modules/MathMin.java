@@ -1,61 +1,61 @@
 package modules;
 
-public class MathMax {
-    public static int getMax(int[] arrayValue) {
+public class MathMin {
+    public static int getMin(int[] arrayValue) {
         /**
-         * To get a max *int* from an array
+         * To get a min *int* from an array
          * 
          * @param int[] listValue: the array full of int (Values)
-         * @return maxValue: the maximum int (Value) of listValue
+         * @return maxValue: the minimum int (Value) of listValue
          */
 
         validateArray(arrayValue);
 
-        int maxElement = arrayValue[0];
+        int minElement = arrayValue[0];
         for (int e = 1; e < arrayValue.length; e++) {
-            if (arrayValue[e] > maxElement) {
-                maxElement = arrayValue[e];
+            if (arrayValue[e] < minElement) {
+                minElement = arrayValue[e];
             }
         }
-        return maxElement;
+        return minElement;
     }
 
-    public static float getMax(float[] arrayValue) {
+    public static float getMin(float[] arrayValue) {
         /**
-         * To get a max *float* from an array
+         * To get a min *float* from an array
          * 
          * @param float[] listValue: the array full of float (Values)
-         * @return maxValue: the maximum float (Value) of listValue
+         * @return maxValue: the minimum float (Value) of listValue
          */
 
         validateArray(arrayValue);
 
-        float maxElement = arrayValue[0];
+        float minElement = arrayValue[0];
         for (int e = 1; e < arrayValue.length; e++) {
-            if (arrayValue[e] > maxElement) {
-                maxElement = arrayValue[e];
+            if (arrayValue[e] < minElement) {
+                minElement = arrayValue[e];
             }
         }
-        return maxElement;
+        return minElement;
     }
 
-    public static double getMax(double[] arrayValue) {
+    public static double getMin(double[] arrayValue) {
         /**
-         * To get a max *double* from an array
+         * To get a min *double* from an array
          * 
          * @param double[] listValue: the array full of doubles (Values)
-         * @return maxValue: the maximum doubles (Value) of listValue
+         * @return maxValue: the minimum doubles (Value) of listValue
          */
 
         validateArray(arrayValue);
 
-        double maxElement = arrayValue[0];
+        double minElement = arrayValue[0];
         for (int e = 1; e < arrayValue.length; e++) {
-            if (arrayValue[e] > maxElement) {
-                maxElement = arrayValue[e];
+            if (arrayValue[e] < minElement) {
+                minElement = arrayValue[e];
             }
         }
-        return maxElement;
+        return minElement;
     }
 
     private static void validateArray(int[] array) {
